@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 
 export default function Router({
   routes = [],
-  defaultComponent: DefaultComponent = () => null
+  defaultComponent: DefaultComponent = () => <h1>404</h1>
 }) {
   const [currentPath, setCurrentPath] = useState(window.location.pathname)
 

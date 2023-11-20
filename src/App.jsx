@@ -1,22 +1,11 @@
 import Router from './components/Router'
-import AboutPage from './pages/About'
-import HomePage from './pages/Home'
-
-const routes = [
-  {
-    path: '/',
-    Component: HomePage
-  },
-  {
-    path: '/about',
-    Component: AboutPage
-  }
-]
+import routes from './lib/routes'
+import PageNotFound from './pages/404'
 
 export default function App() {
   return (
     <main>
-      <Router routes={routes} defaultComponent={() => <h1>404</h1>} />
+      <Router routes={routes} defaultComponent={PageNotFound} />
     </main>
   )
 }
