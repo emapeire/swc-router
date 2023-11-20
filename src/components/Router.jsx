@@ -1,9 +1,10 @@
 /* eslint-disable react/prop-types */
 import { EVENTS } from '../utils/consts'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, Children } from 'react'
 import { match } from 'path-to-regexp'
 
 export default function Router({
+  children,
   routes = [],
   defaultComponent: DefaultComponent = () => <h1>404</h1>
 }) {
@@ -24,7 +25,16 @@ export default function Router({
 
   let routeParams = {}
 
-  const Page = routes.find(({ path }) => {
+  // Add routes from children <Route /> components
+  const routesFromChildren = Children.map(children, ({ props, type }) => {
+    const { name } = type
+    const isRoute = name === 'Route'
+    return isRoute ? props : null
+  })
+
+  const routeToUse = routes.concat(routesFromChildren)
+
+  const Page = routeToUse.find(({ path }) => {
     if (path === currentPath) return true
 
     // We have used path-to-regexp to match dinamic routes:
