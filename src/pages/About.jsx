@@ -1,4 +1,4 @@
-import navigate from '../components/Link'
+import Link from '../components/Link'
 
 export default function AboutPage() {
   return (
@@ -15,7 +15,7 @@ export default function AboutPage() {
       <p>
         This is the about page for Create your own React Router from scratch
       </p>
-      <button onClick={() => navigate('/')}>Home</button>
+      <Link to='/'>Home</Link>
     </>
   )
 }
