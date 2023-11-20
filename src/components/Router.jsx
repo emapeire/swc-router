@@ -34,6 +34,9 @@ export default function Router({
 
     if (!matched) return false
 
+    // We have saved the route params in the routeParams variable
+    // so we can pass them to the page component:
+    // /search/:query <-- matched.params.query === 'javascript'
     routeParams = matched.params
     return true
   })?.Component
