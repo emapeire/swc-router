@@ -1,5 +1,7 @@
+/* eslint-disable react/prop-types */
 import AboutPage from '../pages/About'
 import HomePage from '../pages/Home'
+import SearchPage from '../pages/Search'
 
 const routes = [
   {
@@ -12,7 +14,7 @@ const routes = [
   },
   {
     path: '/search/:query',
-    Component: () => <h1>Seeker</h1>
+    Component: SearchPage
   }
 ]
 
