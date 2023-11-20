@@ -9,6 +9,10 @@ const routes = [
   {
     path: '/about',
     Component: AboutPage
+  },
+  {
+    path: '/about/:query',
+    Component: () => <h1>Seeker</h1>
   }
 ]
 
