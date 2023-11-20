@@ -11,7 +11,7 @@ const routes = [
     Component: AboutPage
   },
   {
-    path: '/about/:query',
+    path: '/search/:query',
     Component: () => <h1>Seeker</h1>
   }
 ]
