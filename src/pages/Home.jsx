@@ -1,4 +1,4 @@
-import { navigate } from '../lib/navigate'
+import navigate from '../components/Link'
 
 export default function HomePage() {
   return (

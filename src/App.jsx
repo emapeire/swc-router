@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import AboutPage from './components/About'
-import HomePage from './components/Home'
+import AboutPage from './pages/About'
+import HomePage from './pages/Home'
 import { EVENTS } from './utils/consts'
 
 export default function App() {
