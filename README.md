@@ -1,5 +1,6 @@
 # Create a React Router from scratch
 
+- Create a way to do a MPAs
 - Create a way to do a SPAs
 - You can navigate between pages with the back button
 - Create a Link component to do it declaratively
