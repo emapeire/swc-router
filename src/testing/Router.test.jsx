@@ -1,8 +1,8 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest'
 import { cleanup, render, screen, waitFor } from '@testing-library/react'
-import Router from './Router'
-import Route from './Route'
-import Link from './Link'
+import Router from '../components/Router'
+import Route from '../components/Route'
+import Link from '../components/Link'
 import { getCurrentPath } from '../utils/utils'
 
 vi.mock('../utils/utils', () => ({

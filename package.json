@@ -9,7 +9,7 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "vitest",
-    "prepare": ""
+    "prepare": "npx swc ./src/components/*.jsx -d compiled/"
   },
   "dependencies": {
     "path-to-regexp": "^6.2.1",
