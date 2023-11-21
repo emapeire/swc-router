@@ -17,7 +17,7 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "vitest",
-    "prepare": "swc ./src/index.jsx -d dist && swc ./src/components/*.jsx -d dist/components && swc ./src/utils/*.js -d dist/utils && swc ./src/lib/*.js -d dist/lib"
+    "prepare": "swc ./src/index.jsx -d dist && swc ./src/components/*.jsx -d dist && swc ./src/utils/*.js -d dist && swc ./src/lib/*.js -d dist"
   },
   "dependencies": {
     "path-to-regexp": "^6.2.1",
