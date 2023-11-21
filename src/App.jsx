@@ -9,7 +9,7 @@ const PageNotFound = lazy(() => import('./pages/404'))
 
 const appRoutes = [
   {
-    path: '/:lang',
+    path: '/:lang/',
     Component: HomePage
   },
   {
