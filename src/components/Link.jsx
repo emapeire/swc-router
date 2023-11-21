@@ -1,8 +1,13 @@
 /* eslint-disable react/prop-types */
-import navigate from '../lib/navigate'
-import { BUTTONS } from '../utils/consts'
+import { BUTTONS, EVENTS } from '../utils/consts'
 
 export default function Link({ target, to, ...props }) {
+  const navigate = (href) => {
+    window.history.pushState({}, null, href)
+    const navEvent = new Event(EVENTS.PUSHSTATE)
+    window.dispatchEvent(navEvent)
+  }
+
   const handleClick = (event) => {
     const isMainEvent = event.button === BUTTONS.LEFT
     const isModifierEvent =
