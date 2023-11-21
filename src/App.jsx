@@ -1,6 +1,6 @@
 import { Suspense, lazy } from 'react'
-import Route from './components/Route'
-import Router from './components/Router'
+import { Route } from './components/Route'
+import { Router } from './components/Router'
 
 const HomePage = lazy(() => import('./pages/Home'))
 const AboutPage = lazy(() => import('./pages/About'))

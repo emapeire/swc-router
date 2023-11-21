@@ -1,3 +1,3 @@
-export default function Route() {
+export function Route() {
   return null
 }

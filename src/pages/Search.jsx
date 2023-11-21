@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useEffect } from 'react'
-import Link from '../components/Link'
+import { Link } from '../components/Link'
 
 export default function SearchPage({ routeParams }) {
   useEffect(() => {

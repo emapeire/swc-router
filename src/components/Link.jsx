@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { BUTTONS, EVENTS } from '../utils/consts'
 
-export default function Link({ target, to, ...props }) {
+export function Link({ target, to, ...props }) {
   const navigate = (href) => {
     window.history.pushState({}, null, href)
     const navEvent = new Event(EVENTS.PUSHSTATE)

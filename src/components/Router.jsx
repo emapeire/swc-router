@@ -4,7 +4,7 @@ import { useEffect, useState, Children } from 'react'
 import { match } from 'path-to-regexp'
 import { getCurrentPath } from '../utils/getCurrentPath'
 
-export default function Router({
+export function Router({
   children,
   routes = [],
   defaultComponent: DefaultComponent = () => <h1>404</h1>

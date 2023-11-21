@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import Link from '../components/Link'
+import { Link } from '../components/Link'
 import useLang from '../hook/useLang'
 import { aboutLang } from '../lang/aboutLang'
 
