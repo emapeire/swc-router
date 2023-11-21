@@ -8,13 +8,18 @@ export default function SearchPage({ routeParams }) {
   }, [routeParams])
 
   return (
-    <h1>
-      You have searched{' '}
-      <Link to={routeParams.query}>
-        <span style={{ color: 'skyblue', textDecoration: 'underline' }}>
-          {routeParams.query}
-        </span>
-      </Link>
-    </h1>
+    <>
+      <div>
+        <h1>
+          You have searched{' '}
+          <Link to={routeParams.query}>
+            <span style={{ color: 'skyblue', textDecoration: 'underline' }}>
+              {routeParams.query}
+            </span>
+          </Link>
+        </h1>
+      </div>
+      <Link to='/'>Go back to home</Link>
+    </>
   )
 }
