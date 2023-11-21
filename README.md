@@ -5,7 +5,7 @@
 - You can navigate between pages with the back button
 - You can use a Link component to do it declaratively
 - Also a Router component to do it declaratively
-- Supported route by default (404)
+- Supported route by default `404`
 - Supported routes with params
 - `<Router />` component to do it declratively
 - Lazy Loading of routes
