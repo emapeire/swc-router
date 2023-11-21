@@ -12,8 +12,8 @@ export default function AboutPage({ routeParams }) {
       <h1>{title}</h1>
       <div>
         <img
-          src='https://avatars.githubusercontent.com/u/63935846?v=4'
-          alt="Github's profile picture"
+          src='../../public/icon.svg'
+          alt='Profile picture'
           width={250}
           height={250}
         />
