@@ -11,9 +11,19 @@ export default function AboutPage({ routeParams }) {
     <>
       <h1>{title}</h1>
       <div>
-        <img src='icon.svg' alt='Profile picture' width={250} height={250} />
+        <img src='icon.svg' alt='Package picture' width={250} height={250} />
       </div>
       <p>{description}</p>
+      <p>
+        <a
+          href='https://www.npmjs.com/package/swc-router'
+          target='_blank'
+          rel='noreferrer'
+        >
+          SWC-ROUTER
+        </a>{' '}
+        package ⚡️
+      </p>
       <Link to='/'>{link}</Link>
     </>
   )
