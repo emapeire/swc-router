@@ -1,11 +1,21 @@
+import { Suspense, lazy } from 'react'
 import Route from './components/Route'
 import Router from './components/Router'
-import PageNotFound from './pages/404'
-import AboutPage from './pages/About'
-import HomePage from './pages/Home'
 import SearchPage from './pages/Search'
 
-const routes = [
+const HomePage = lazy(() => import('./pages/Home'))
+const AboutPage = lazy(() => import('./pages/About'))
+const PageNotFound = lazy(() => import('./pages/404'))
+
+const appRoutes = [
+  {
+    path: '/:lang',
+    Component: HomePage
+  },
+  {
+    path: '/:lang/about',
+    Component: AboutPage
+  },
   {
     path: '/search/:query',
     Component: SearchPage
@@ -15,10 +25,12 @@ const routes = [
 export default function App() {
   return (
     <main>
-      <Router routes={routes} defaultComponent={PageNotFound}>
-        <Route path='/' Component={HomePage} />
-        <Route path='/about' Component={AboutPage} />
-      </Router>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Router routes={appRoutes} defaultComponent={PageNotFound}>
+          <Route path='/' Component={HomePage} />
+          <Route path='/about' Component={AboutPage} />
+        </Router>
+      </Suspense>
     </main>
   )
 }

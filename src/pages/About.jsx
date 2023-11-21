@@ -1,9 +1,15 @@
+/* eslint-disable react/prop-types */
 import Link from '../components/Link'
+import useLang from '../hook/useLang'
+import { aboutLang } from '../lang/aboutLang'
 
-export default function AboutPage() {
+export default function AboutPage({ routeParams }) {
+  const { lang } = routeParams
+  const { title, description, link } = useLang(lang, aboutLang)
+
   return (
     <>
-      <h1>About</h1>
+      <h1>{title}</h1>
       <div>
         <img
           src='https://avatars.githubusercontent.com/u/63935846?v=4'
@@ -12,10 +18,8 @@ export default function AboutPage() {
           height={250}
         />
       </div>
-      <p>
-        This is the about page for Create your own React Router from scratch
-      </p>
-      <Link to='/'>Home</Link>
+      <p>{description}</p>
+      <Link to='/'>{link}</Link>
     </>
   )
 }
