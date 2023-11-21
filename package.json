@@ -16,9 +16,9 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "prepare": "npm run test && swc src/components src/utils src/index.jsx -d dist",
-    "test": "echo",
-    "test:watch": "vitest",
+    "prepare": "npm run echo && swc src/components src/utils src/index.jsx -d dist",
+    "echo": "echo",
+    "test": "vitest",
     "test:ui": "vitest --ui"
   },
   "dependencies": {

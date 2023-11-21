@@ -3,9 +3,9 @@ import { cleanup, render, screen, waitFor } from '@testing-library/react'
 import { Router } from '../components/Router'
 import { Route } from '../components/Route'
 import { Link } from '../components/Link'
-import { getCurrentPath } from '../utils/utils'
+import { getCurrentPath } from '../utils/getCurrentPath'
 
-vi.mock('../utils/utils', () => ({
+vi.mock('../utils/getCurrentPath', () => ({
   getCurrentPath: vi.fn()
 }))
 
