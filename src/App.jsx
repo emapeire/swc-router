@@ -5,7 +5,7 @@ import { Router } from './components/Router'
 const HomePage = lazy(() => import('./pages/Home'))
 const AboutPage = lazy(() => import('./pages/About'))
 const SearchPage = lazy(() => import('./pages/Search'))
-const PageNotFound = lazy(() => import('./pages/404'))
+const PageNotFound = lazy(() => import('./pages/NotFound'))
 
 const appRoutes = [
   {
