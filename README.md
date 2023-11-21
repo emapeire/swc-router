@@ -1,4 +1,4 @@
-# Create a React + SWC Router from scratch
+# Create a React + SWC Router from scratch ⚡️
 
 - You can create a way to do a MPAs
 - Also a way to do a SPAs
