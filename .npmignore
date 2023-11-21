@@ -1,5 +1,6 @@
 src
 public
+build
 index.html
 package-lock.json
 vite.config.js
