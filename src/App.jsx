@@ -1,10 +1,10 @@
 import { Suspense, lazy } from 'react'
 import Route from './components/Route'
 import Router from './components/Router'
-import SearchPage from './pages/Search'
 
 const HomePage = lazy(() => import('./pages/Home'))
 const AboutPage = lazy(() => import('./pages/About'))
+const SearchPage = lazy(() => import('./pages/Search'))
 const PageNotFound = lazy(() => import('./pages/404'))
 
 const appRoutes = [
