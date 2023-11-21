@@ -11,12 +11,7 @@ export default function AboutPage({ routeParams }) {
     <>
       <h1>{title}</h1>
       <div>
-        <img
-          src='../../public/icon.svg'
-          alt='Profile picture'
-          width={250}
-          height={250}
-        />
+        <img src='icon.svg' alt='Profile picture' width={250} height={250} />
       </div>
       <p>{description}</p>
       <Link to='/'>{link}</Link>
