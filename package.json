@@ -1,15 +1,23 @@
 {
-  "name": "react-router",
-  "private": true,
-  "version": "0.0.0",
+  "name": "swc-router",
+  "version": "0.0.1",
   "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "vitest",
-    "prepare": "swc ./src/components/*.jsx -d swc"
+    "prepare": "swc ./src/index.jsx -d dist && swc ./src/components/*.jsx -d dist/components"
   },
   "dependencies": {
     "path-to-regexp": "^6.2.1",
