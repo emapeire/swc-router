@@ -1,14 +1,18 @@
 export const aboutLang = {
   en: {
-    title: 'About the project',
+    title: 'About swc-router',
     description:
-      'This is the about page for create your own React Router from scratch',
-    link: 'Go back to home'
+      'This is an open-sourced project about creating your own React Router from scratch',
+    link: 'Go back to home',
+    gh: 'Go to the open-source github repo of ',
+    npm: 'Go to the npm package of '
   },
   es: {
-    title: 'Acerca del proyecto',
+    title: 'Acerca de swc-router',
     description:
-      'Esta es la página acerca de crear tu propio React Router desde cero',
-    link: 'Regresar al inicio'
+      'Este es un proyecto de código abierto sobre cómo crear tu propio React Router desde cero',
+    link: 'Regresar al inicio',
+    gh: 'Ir al repositorio de código abierto en github de ',
+    npm: 'Ir al paquete npm de '
   }
 }

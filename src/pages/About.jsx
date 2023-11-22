@@ -5,24 +5,36 @@ import { aboutLang } from '../lang/aboutLang'
 
 export default function AboutPage({ routeParams }) {
   const { lang } = routeParams
-  const { title, description, link } = useLang(lang, aboutLang)
+  const { title, description, link, gh, npm } = useLang(lang, aboutLang)
 
   return (
     <>
-      <h1>{title}</h1>
+      <h1>{title} ⚡️</h1>
       <div>
         <img src='icon.svg' alt='Package picture' width={250} height={250} />
       </div>
       <p>{description}</p>
       <p>
+        ⚡️ {gh}
+        <a
+          href='https://www.github.com/emapeire/swc-router'
+          target='_blank'
+          rel='noreferrer'
+        >
+          swc-router
+        </a>
+        .
+      </p>
+      <p>
+        ⚡️ {npm}
         <a
           href='https://www.npmjs.com/package/swc-router'
           target='_blank'
           rel='noreferrer'
         >
-          SWC-ROUTER
-        </a>{' '}
-        package ⚡️
+          swc-router
+        </a>
+        .
       </p>
       <Link to='/'>{link}</Link>
     </>

@@ -9,7 +9,7 @@ export default function HomePage({ routeParams }) {
 
   return (
     <>
-      <h1>{title}</h1>
+      <h1>{title} ⚡️</h1>
       <p>{description}</p>
       <Link to='/about'>{link}</Link>
     </>
