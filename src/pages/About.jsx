@@ -10,10 +10,19 @@ export default function AboutPage({ routeParams }) {
   return (
     <>
       <h1>{title} ⚡️</h1>
-      <div>
-        <img src='icon.svg' alt='Package picture' width={250} height={250} />
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'row',
+          gap: '2rem',
+          margin: '1rem 10rem 1rem 9rem',
+          alignItems: 'center',
+          justifyContent: 'center'
+        }}
+      >
+        <img src='icon.svg' alt='Package picture' width={50} height={50} />
+        <p>{description}.</p>
       </div>
-      <p>{description}</p>
       <p>
         ⚡️ {gh}
         <a
@@ -36,7 +45,9 @@ export default function AboutPage({ routeParams }) {
         </a>
         .
       </p>
-      <Link to='/'>{link}</Link>
+      <div style={{ padding: '1rem' }}>
+        <Link to='/'>{link}</Link>
+      </div>
     </>
   )
 }

@@ -1,3 +1,4 @@
+import './App.css'
 import { Suspense, lazy } from 'react'
 import { Route } from './components/Route'
 import { Router } from './components/Router'

@@ -11,7 +11,9 @@ export default function HomePage({ routeParams }) {
     <>
       <h1>{title} ⚡️</h1>
       <p>{description}</p>
-      <Link to='/about'>{link}</Link>
+      <div style={{ padding: '1rem' }}>
+        <Link to='/about'>{link}</Link>
+      </div>
     </>
   )
 }
