@@ -11,3 +11,7 @@
 - Lazy Loading of routes
 - Testing with Vite
 - Published and updated package to NPM (with regularity)
+
+## Watch a demo
+
+[Run the code in replit](https://replit.com/@emapeire/swc-router-demo)
