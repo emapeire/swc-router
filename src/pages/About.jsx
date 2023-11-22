@@ -20,7 +20,15 @@ export default function AboutPage({ routeParams }) {
           justifyContent: 'center'
         }}
       >
-        <img src='icon.svg' alt='Package picture' width={50} height={50} />
+        <img
+          src='icon.svg'
+          alt='Package picture'
+          style={{
+            marginTop: '0.5rem'
+          }}
+          width={50}
+          height={50}
+        />
         <p>{description}.</p>
       </div>
       <p>
