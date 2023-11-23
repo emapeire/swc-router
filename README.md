@@ -4,21 +4,26 @@
 
 - Simple import to your custom components:
 
-```
+```js
 import { Router, Route, Link } from 'swc-router'
 ```
 
 - `<Router />` and `<Route />` component to generate custom routes:
 
-```
+```js
 <Router>
-  <Route path="/" Component={() => { <h1> Home </h1> }} />
+  <Route
+    path='/'
+    Component={() => {
+      ;<h1> Home </h1>
+    }}
+  />
 </Router>
 ```
 
 - `<Link />` component to navigate between pages:
 
-```
+```js
 <Link to='/'> Home </Link>
 ```
 
