@@ -29,9 +29,7 @@ import { Router, Route, Link } from 'swc-router'
 
 ---
 
-### Watch a demo
-
-[Run the code in replit](https://replit.com/@emapeire/swc-router-demo)
+### Watch a demo: [run it in replit](https://replit.com/@emapeire/swc-router-demo)
 
 ---
 
