@@ -22,8 +22,8 @@ import { Router, Route, Link } from 'swc-router'
 <Link to='/'> Home </Link>
 ```
 
-- Supported route by default `(404)`.
 - Supported routes with params.
+- Supported `404` route by default.
 - Lazy Loading of routes.
 - Tested package with Vitest.
 
