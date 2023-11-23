@@ -1,21 +1,40 @@
 # Open-Source React + SWC Router ⚡️
 
-- You can create a way to do a MPAs
-- Also a way to do a SPAs
-- You can navigate between pages with the back button
-- You can use a Link component to do it declaratively
-- Also a Router component to do it declaratively
-- Supported route by default `404`
-- Supported routes with params
-- `<Router />` component to do it declratively
-- Lazy Loading of routes
-- Testing with Vite
-- Published and updated package to NPM (with regularity)
+### You can create a simple SPA with this package!
 
-## Watch a demo
+- Simple import to your custom components:
+
+```
+import { Router, Route, Link } from 'swc-router'
+```
+
+- `<Router />` and `<Route />` component to generate custom routes:
+
+```
+<Router>
+  <Route path="/" Component={() => { <h1> Home </h1> }} />
+</Router>
+```
+
+- `<Link />` component to navigate between pages:
+
+```
+<Link to='/'> Home </Link>
+```
+
+- Supported route by default `(404)`.
+- Supported routes with params.
+- Lazy Loading of routes.
+- Tested package with Vitest.
+
+---
+
+### Watch a demo
 
 [Run the code in replit](https://replit.com/@emapeire/swc-router-demo)
 
-## Credits to
+---
 
-[@midudev](https://github.com/midudev)
+#### Credits to [@midudev](https://github.com/midudev)
+
+Thanks a lot 🖤
