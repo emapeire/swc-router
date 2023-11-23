@@ -15,3 +15,7 @@
 ## Watch a demo
 
 [Run the code in replit](https://replit.com/@emapeire/swc-router-demo)
+
+### Credits to
+
+@midudev
