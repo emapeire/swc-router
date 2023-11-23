@@ -16,6 +16,6 @@
 
 [Run the code in replit](https://replit.com/@emapeire/swc-router-demo)
 
-### Credits to
+## Credits to
 
 [@midudev](https://github.com/midudev)
