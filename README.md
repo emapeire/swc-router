@@ -38,6 +38,6 @@ import { Router, Route, Link } from 'swc-router'
 
 ---
 
-#### Credits to [@midudev](https://github.com/midudev)
+### Credits to [@midudev](https://github.com/midudev)
 
 Thanks a lot 🖤
