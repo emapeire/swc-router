@@ -52,7 +52,7 @@ Navigate between pages using `<Link>`:
 
 ## Demo
 
-Check out a live demo: [run it in replit](https://replit.com/@emapeire/swc-router-demo)
+Check out a [live demo](https://swc-router-demo.emapeire.repl.co/)
 
 ## License
 
