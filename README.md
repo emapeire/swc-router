@@ -1,43 +1,63 @@
 # Open-Source React + SWC Router ⚡️
 
-### You can create a simple SPA with this package!
+[![NPM Version](https://img.shields.io/npm/v/swc-router.svg)](https://www.npmjs.com/package/swc-router)
 
-- Simple import to your custom components:
+Create simple single-page applications (SPA) with ease using `swc-router`. This lightweight routing solution for React applications leverages the speed of SWC.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Demo](#demo)
+- [License](#license)
+- [Credits](#credits)
+
+## Installation
+
+```bash
+npm install swc-router
+```
+
+## Usage
+
+### Basic Routing
+
+Import `Router`, `Route`, and `Link` components:
 
 ```js
 import { Router, Route, Link } from 'swc-router'
 ```
 
-- `<Router />` and `<Route />` component to generate custom routes:
+Define your routes using `<Router>` and `<Route>`:
 
 ```js
 <Router>
-  <Route
-    path='/'
-    Component={() => {
-      ;<h1> Home </h1>
-    }}
-  />
+  <Route path='/' Component={() => <h1>Home</h1>} />
+  // Other routes...
 </Router>
 ```
 
-- `<Link />` component to navigate between pages:
+Navigate between pages using `<Link>`:
 
 ```js
-<Link to='/'> Home </Link>
+<Link to='/'>Home</Link>
 ```
 
-- Supported routes with params.
-- Supported `404` route by default.
-- Lazy Loading of routes.
-- Tested package with Vitest.
+### Features
 
----
+- Parameterized routing
+- Default `404` route handling
+- Lazy loading support
+- Fully tested with Vitest
 
-### Watch a demo: [run it in replit](https://replit.com/@emapeire/swc-router-demo)
+## Demo
 
----
+Check out a live demo: [run it in replit](https://replit.com/@emapeire/swc-router-demo)
 
-### Credits to [@midudev](https://github.com/midudev)
+## License
 
-Thanks a lot 🖤
+This project is licensed under the [MIT License](/LICENSE).
+
+## Credits
+
+Special thanks to [@midudev](https://github.com/midudev) for inspiration and guidance.
