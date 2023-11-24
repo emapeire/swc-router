@@ -5,3 +5,6 @@ index.html
 package-lock.json
 vite.config.js
 .swcrc
+.release-it.json
+.github
+.eslintrc.cjs
