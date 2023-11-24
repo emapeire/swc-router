@@ -17,7 +17,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 20
+          node-version: '20'
           registry-url: https://registry.npmjs.org/
 
       - name: Install dependencies
@@ -26,8 +26,8 @@ jobs:
       - name: Run tests
         run: npm test
 
-      - name: Semantic Release
-        run: npx semantic-release
+      - name: Release
+        run: npx release-it
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
