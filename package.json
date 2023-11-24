@@ -18,7 +18,8 @@
     "preview": "vite preview",
     "prepare": "npm run echo && swc src/components src/utils src/index.jsx -d dist",
     "echo": "echo",
-    "test": "vitest",
+    "test": "vitest --watch",
+    "test:ci": "vitest run",
     "test:ui": "vitest --ui",
     "release": "release-it"
   },
