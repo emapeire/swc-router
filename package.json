@@ -49,7 +49,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/emapeire/swc-router"
+    "url": "git+https://github.com/emapeire/swc-router.git"
   },
   "homepage": "https://github.com/emapeire/swc-router#readme",
   "bugs": {
