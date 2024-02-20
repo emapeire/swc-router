@@ -1,5 +1,8 @@
 # Open-Source React + SWC Router ⚡️
 
+![swc-router](https://github.com/emapeire/swc-router/assets/63935846/f0d9e4fa-0687-4a2e-aa02-f1cd620ee5fe)
+
+
 [![NPM Version](https://img.shields.io/npm/v/swc-router.svg)](https://www.npmjs.com/package/swc-router)
 
 Create simple single-page applications (SPA) with ease using `swc-router`. This lightweight routing solution for React applications leverages the speed of SWC.
